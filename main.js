@@ -3,7 +3,10 @@ function blossom() {
   flowerPetals.addEventListener("click", () => {
     document.getElementById("body").style.backgroundImage =
       "url(img/flowerlawn.jpg)";
-    document.getElementById("box1background").style.backgroundImage = "none";
+    document.getElementById("box1background").style.visibility = "hidden";
+    document.getElementById("showFlower").style.visibility = "hidden";
+    document.getElementById("detailInfo").style.height = "8rem";
+    document.getElementById("detailInfo").style.paddingTop = "1.5rem";
     const message = document.getElementById("message");
 
     message.style.color = "wheat";
