@@ -9,7 +9,7 @@ body {
   font-size: 62.5%;
   height: 100vh;
   background-color: rgba(250, 235, 215, 0.24);
-  background-image: url(img/wall.jpg);
+  background-image: url(../img/wall.jpg);
   background-repeat: repeat;
   background-position: center/cover;
   margin: 2rem;
@@ -59,7 +59,7 @@ img {
 }
 .box1background {
   position: absolute;
-  background-image: url("img/grand-canyonContent.svg");
+  background-image: url("../img/grand-canyonContent.svg");
   background-repeat: no-repeat;
   background-position: 0rem 0rem;
   width: 47rem;
