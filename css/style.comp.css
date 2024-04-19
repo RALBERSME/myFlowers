@@ -322,7 +322,7 @@ footer {
   height: 3.5vh; }
 
 body {
-  background-color: var(--color-primary-light); }
+  background-color: var(--color-primary); }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
