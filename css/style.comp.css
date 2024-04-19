@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --color-primary: rgb(253, 146, 164);
   --color-primary-light: rgb(255, 192, 203);
@@ -53,6 +54,162 @@ body {
     left: 27.5%; }
   .side-nav__top {
     cursor: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#body-tea {
+  height: 100vh;
+  background-image: linear-gradient(var(--color-primary-light), var(--color-primary), var(--color-grey-dark-1), var(--color-grey-dark-2), var(--color-grey-dark-3)); }
+
+.container-tea {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  position: relative; }
+
+.drink {
+  position: relative;
+  margin-top: 30%; }
+
+.teaFlowers {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: -52.5%;
+  left: 42%;
+  z-index: 5;
+  animation: falling 4s 0.5s infinite; }
+
+@keyframes falling {
+  0% {
+    top: -52.5%;
+    left: 42%;
+    opacity: 1; }
+  15% {
+    left: 34%;
+    transform: rotate(15deg); }
+  30% {
+    left: 42%;
+    transform: rotate(-15deg); }
+  45% {
+    left: 36%;
+    transform: rotate(5deg);
+    opacity: 1; }
+  50% {
+    top: 20%;
+    opacity: 0; }
+  100% {
+    top: 20%;
+    opacity: 0; } }
+
+.tea-cup {
+  margin-top: 20%;
+  margin-left: 25%;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background-color: var(--color-grey-light-4);
+  border-radius: 50px / 100px;
+  z-index: 1; }
+  .tea-cup::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    border-radius: 50px / 100px;
+    background-color: var(--color-grey-dark-3);
+    box-shadow: var(--shadow-dark);
+    animation: mixing 4s 0.5s infinite;
+    z-index: 10; }
+
+@keyframes mixing {
+  0% {
+    background-color: var(--color-grey-dark-3); }
+  8% {
+    background-color: var(--color-grey-dark-3); }
+  45% {
+    background-image: linear-gradient(45deg, #f27bbd, #e2f76c); }
+  55% {
+    background-image: linear-gradient(45deg, #f27bbd, #874ccc); }
+  100% {
+    background-image: linear-gradient(55deg, #f27bbd, #c65bcf, #874ccc, #10439f); } }
+
+.tea-hold {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  width: 400px;
+  height: 200px;
+  box-sizing: content-box;
+  z-index: -2; }
+  .tea-hold::after {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border: 30px solid var(--color-grey-light-3);
+    box-shadow: var(--shadow-dark);
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(-30deg); }
+  .tea-hold::before {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border: 20px solid var(--color-grey-light-4);
+    box-shadow: var(--shadow-dark);
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(-30deg); }
+
+.tea-message {
+  transform: rotateZ(5deg);
+  margin: 5%;
+  background-color: var(--color-grey-light-4);
+  box-shadow: var(--shadow-dark);
+  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  border: 2px solid var(--color-grey-dark-3);
+  justify-content: center;
+  text-align: left;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.35rem;
+  color: var(--color-grey-dark-1);
+  border-radius: 7.5%; }
+  .tea-message::first-letter {
+    font-size: 2rem;
+    color: var(--color-primary); }
+
+.tea-flower-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.backFromTea {
+  text-decoration: overline underline;
+  text-decoration-style: double;
+  margin-left: 40%;
+  color: var(--color-primary); }
+
+.backFromTea:hover {
+  text-decoration: overline underline;
+  color: var(--color-primary-dark); }
+
+.emphasis::first-letter {
+  font-size: 2rem;
+  color: var(--color-primary); }
 
 .container {
   margin: 2rem;
