@@ -2,7 +2,7 @@ function blossom() {
   const flowerPetals = document.querySelector(".flower");
   flowerPetals.addEventListener("click", () => {
     document.getElementById("body").style.backgroundImage =
-      "url(../img/flowerlawn.jpg)";
+      "url(img/flowerlawn.jpg)";
     document.getElementById("box1background").style.backgroundImage = "none";
     const message = document.getElementById("message");
 
