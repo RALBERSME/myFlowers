@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.half {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+nav {
+  width: 20%;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://cdn.pixabay.com/photo/2022/06/23/09/18/drawing-7279358_640.jpg")
+      no-repeat;
+  background-size: cover;
+}
+
+.viewport {
+  width: 42vw;
+  height: 21vw;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  perspective: 1300px;
+}
+
+.viewport::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 20%;
+  background-color: #000;
+  z-index: -1;
+  top: 140%;
+  left: -10%;
+  filter: blur(50px);
+}
+
+.cube {
+  width: 100%;
+  height: 33.3333333%;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.cube-1 {
+  transition: transform 0.4s;
+}
+
+.cube-2 {
+  z-index: 10;
+  transition: transform 0.4s 0.2s;
+}
+
+.cube-3 {
+  transition: transform 0.4s 0.4s;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.front {
+  transform: translateZ(21vw);
+}
+
+.cube-1 .front {
+  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.cube-2 .front {
+  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
+    no-repeat 50% -7vw;
+  background-size: cover;
+}
+
+.cube-3 .front {
+  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
+    no-repeat 50% -14vw;
+  background-size: cover;
+}
+
+.back {
+  transform: translateZ(-21vw) rotateY(180deg);
+}
+
+.cube-1 .back {
+  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.cube-2 .back {
+  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
+    no-repeat 50% -7vw;
+  background-size: cover;
+}
+
+.cube-3 .back {
+  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
+    no-repeat 50% -14vw;
+  background-size: cover;
+}
+
+.left {
+  transform: translateX(-21vw) rotateY(-90deg);
+}
+
+.cube-1 .left {
+  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.cube-2 .left {
+  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
+    no-repeat 50% -7vw;
+  background-size: cover;
+}
+
+.cube-3 .left {
+  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
+    no-repeat 50% -14vw;
+  background-size: cover;
+}
+
+.right {
+  transform: translateX(21vw) rotateY(90deg);
+}
+
+.cube-1 .right {
+  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.cube-2 .right {
+  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
+    no-repeat 50% -7vw;
+  background-size: cover;
+}
+
+.cube-3 .right {
+  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
+    no-repeat 50% -14vw;
+  background-size: cover;
+}
+
+.top {
+  height: 42vw;
+  background-color: #111;
+  transform: translateY(-21vw) rotateX(90deg);
+}
+
+.bottom {
+  height: 42vw;
+  background-color: #111;
+  transform: translateY(-14vw) rotateX(-90deg);
+}
+
+.control {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(238, 238, 154);
+  background-color: rgba(59, 52, 50, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(238, 238, 154);
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.control:hover {
+  background-color: rgba(42, 38, 36, 0.8);
+}
+
+.control i {
+  pointer-events: none;
+}
+
+.left-arrow {
+  top: 50%;
+  left: -35%;
+}
+
+.right-arrow {
+  top: 50%;
+  left: 135%;
+}
+
+.play-pause {
+  top: 140%;
+  left: 120%;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  margin: 10px;
+  background-color: rgb(253, 146, 164);
+  color: #333;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.55rem;
+  list-style: none;
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+  text-shadow: 0.25px 0.5px 0 rgb(238, 238, 154);
+}
+li:last-of-type {
+  background-color: rgb(244, 222, 111);
+}
+.click {
+  cursor: pointer;
+  background-color: rgb(248, 117, 139);
+  text-shadow: none;
+}
+.click:hover {
+  background-color: #777;
+  color: rgb(246, 246, 135);
+}
