@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(253, 146, 164);
+  text-shadow: 0.5px 0.5px 0px rgb(240, 240, 113);
+}
+.margin-box {
+  margin: 5%;
+  margin-top: 2.5%;
+}
+.navbar1 {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+.navbar2 {
+  position: absolute;
+  top: 16%;
+  left: 52%;
+  display: flex;
+  width: 43%;
+  flex-direction: column;
+}
+.navbar3 {
+  position: absolute;
+  top: 62.5%;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 90%;
+}
+li {
+  list-style: none;
+  background-color: #333;
+  color: rgb(255, 192, 203);
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.5rem;
+  margin: 2px;
+  text-align: center;
+}
+.navbar1 li,
+.navbar3 li {
+  padding: 5px;
+}
+.container {
+  width: 50%;
+  height: 50vh;
+  background-image: radial-gradient(
+    closest-side at 5% 75%,
+    #999,
+    rgb(255, 192, 203) 1000%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 100rem;
+  overflow: hidden;
+  border: 10px dotted rgb(255, 192, 203);
+  border-left: 10px dotted #999;
+  border-radius: 10px;
+}
+
+.board {
+  width: 45rem;
+  height: 20rem;
+  background-color: #777;
+  transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg);
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 40%;
+  transform-origin: top;
+  border-radius: 5%;
+}
+
+.board1 {
+  animation: movingForward 16s infinite linear;
+}
+.board2 {
+  animation: movingForward 16s -3s infinite ease-in-out;
+}
+
+.board3 {
+  animation: movingForward 16s -6s infinite linear;
+}
+
+.board4 {
+  animation: movingForward 16s -9s infinite ease-in-out;
+}
+
+.board5 {
+  animation: movingForward 16s -12s infinite ease-in-out;
+}
+
+@keyframes movingForward {
+  0% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-230rem);
+  }
+
+  100% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(800rem);
+  }
+}
+.board::before {
+  content: "";
+  width: 1rem;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  transform: rotateY(90deg);
+  transform-origin: left;
+}
+
+.board::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+img,
+.img {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  left: 20px;
+  transform: translateZ(50px) rotateX(-50deg);
+}
+.img1 {
+  top: 1rem;
+  left: 1rem;
+}
+.coconut {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  left: 30px;
+  transform: translateZ(70px) rotateX(-50deg) translateX(180px) translateY(40px)
+    rotate(35deg);
+}
+
+.line {
+  height: 40rem;
+  width: 1rem;
+  background-color: rgb(251, 70, 100);
+  position: absolute;
+  transform: translateZ(20rem) rotateX(90deg) rotateY(90deg);
+  transform-origin: top;
+}
+
+.line1 {
+  top: 10rem;
+  left: 2.5rem;
+}
+
+.line2 {
+  top: 10rem;
+  right: 2.5rem;
+}
+
+.line::before {
+  content: "";
+  width: 1rem;
+  height: 23rem;
+  background-color: rgb(251, 70, 100);
+  position: absolute;
+  transform: translateY(-23rem) rotateZ(21deg);
+  transform-origin: bottom;
+}
+
+.line::after {
+  content: "";
+  width: 1rem;
+  height: 23rem;
+  background-color: rgb(251, 70, 100);
+  position: absolute;
+  transform: translateY(-23rem) rotateZ(-21deg);
+  transform-origin: bottom;
+}
+.hoverlink {
+  cursor: pointer;
+}
+.hoverlink:hover {
+  background-color: #777;
+  color: rgb(246, 246, 135);
+}
