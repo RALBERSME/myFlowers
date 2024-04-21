@@ -25,6 +25,7 @@ body {
 .ladybug {
   position: absolute;
   left: 8px;
+  top: 97%;
   width: 200px;
   height: 400px;
   animation: bugrun 25s 1s linear infinite;
@@ -40,6 +41,7 @@ body {
 .ladybug2 {
   position: absolute;
   left: 5px;
+  top: 97%;
   width: 200px;
   height: 400px;
   animation: bugrun 25s 10s linear infinite;
