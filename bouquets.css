@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary: rgb(253, 146, 164);
+  --color-primary-light: rgb(255, 192, 203);
+  --color-primary-dark: rgb(251, 70, 100);
+  --color-primary-dark2: rgb(250, 48, 82);
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+body {
+  height: 100vh;
+  background-color: rgb(250, 223, 227);
+  background-image: url(img/florist.png);
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+  font-style: normal;
+}
+.elements {
+  position: relative;
+  margin-top: 7.5%;
+  height: 92.5vh;
+}
+.flowers {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 15%;
+  left: 20%;
+  transform: rotate(45deg);
+  animation: throwFlowers 3s 1s ease-in-out infinite;
+}
+@keyframes throwFlowers {
+  0% {
+    width: 350px;
+    height: 350px;
+    top: 15%;
+    left: 20%;
+    transform: rotate(45deg);
+  }
+  10% {
+    top: 5%;
+  }
+
+  100% {
+    width: 150px;
+    height: 150px;
+    top: 36%;
+    left: 51.5%;
+    transform: rotate(145deg);
+  }
+}
+.funnel {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 30%;
+  left: 50%;
+  transform: rotate(-50deg);
+}
+.bouquets {
+  position: absolute;
+  width: 200px;
+  height: 240px;
+  top: 101%;
+  left: 60%;
+  transform: rotate(275deg);
+  animation: bouqetfalling 3s 3s ease-in-out infinite;
+}
+@keyframes bouqetfalling {
+  0% {
+    width: 120px;
+    height: 160px;
+    top: 55%;
+    left: 63.5%;
+    transform: rotate(135deg);
+  }
+  100% {
+    width: 200px;
+    height: 240px;
+    top: 101%;
+    left: 60%;
+    transform: rotate(275deg);
+  }
+}
+.bunny {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 54%;
+  right: 0.5%;
+}
+.link1 {
+  position: absolute;
+  padding: 30px;
+  top: 5%;
+  left: 65%;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(5deg);
+  box-shadow: 2px 3px 1px #71ad1a;
+}
+.link2 {
+  position: absolute;
+  padding: 35px;
+  top: 24%;
+  left: 68%;
+  background-color: var(--color-primary-light);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(15deg);
+  box-shadow: 5px 5px 1px #71ad1a;
+}
+.link3 {
+  position: absolute;
+  padding: 30px;
+  top: 30%;
+  left: 88%;
+  background-color: var(--color-primary-dark);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(-5deg);
+  box-shadow: -5px -5px 1px #71ad1a;
+}
+.link4 {
+  position: absolute;
+  padding: 20px;
+  top: 11%;
+  left: 82%;
+  background-color: var(--color-primary-dark2);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(-5deg);
+  box-shadow: 5px 5px 1px #71ad1a;
+}
+.link5 {
+  position: absolute;
+  padding: 30px;
+  top: 44%;
+  left: 68%;
+  background-color: var(--color-primary-dark2);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(-8deg);
+  box-shadow: 1px 1px 1px #71ad1a;
+}
+.link6 {
+  position: absolute;
+  padding: 30px;
+  top: 58%;
+  left: 80%;
+  background-color: #f9db10;
+  border: 0.5px solid #71ad1a;
+  border-radius: 200%;
+  text-align: center;
+  transform: rotate(5deg);
+  box-shadow: 2px 3px 1px #71ad1a;
+}
+.link7 {
+  position: absolute;
+  top: 83%;
+  left: 13.5%;
+}
