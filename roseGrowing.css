@@ -28,7 +28,7 @@ body {
 
 .container {
   margin: 15%;
-  background-image: url("https://cdn.pixabay.com/photo/2024/04/02/12/22/ai-generated-8670811_640.jpg");
+  background-image: url("img/lighting.jpg");
   background-position: center/cover;
   background-repeat: no-repeat;
   height: 65vh;

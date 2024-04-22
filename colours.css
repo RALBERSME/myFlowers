@@ -13,8 +13,7 @@ nav {
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("https://cdn.pixabay.com/photo/2022/06/23/09/18/drawing-7279358_640.jpg")
-      no-repeat;
+    url("img/hintergrund.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -71,20 +70,17 @@ nav {
 }
 
 .cube-1 .front {
-  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
-    no-repeat 50% 0;
+  background: url("img/heckenrose.jpg") no-repeat 50% 0;
   background-size: cover;
 }
 
 .cube-2 .front {
-  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
-    no-repeat 50% -7vw;
+  background: url("img/heckenrose.jpg") no-repeat 50% -7vw;
   background-size: cover;
 }
 
 .cube-3 .front {
-  background: url("https://cdn.pixabay.com/photo/2021/08/16/15/47/dog-roses-6550599_640.jpg")
-    no-repeat 50% -14vw;
+  background: url("img/heckenrose.jpg") no-repeat 50% -14vw;
   background-size: cover;
 }
 
@@ -93,20 +89,17 @@ nav {
 }
 
 .cube-1 .back {
-  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
-    no-repeat 50% 0;
+  background: url("img/lotuses.jpg") no-repeat 50% 0;
   background-size: cover;
 }
 
 .cube-2 .back {
-  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
-    no-repeat 50% -7vw;
+  background: url("img/lotuses.jpg") no-repeat 50% -7vw;
   background-size: cover;
 }
 
 .cube-3 .back {
-  background: url("https://cdn.pixabay.com/photo/2017/07/24/22/01/lotuses-2536194_1280.jpg")
-    no-repeat 50% -14vw;
+  background: url("img/lotuses.jpg") no-repeat 50% -14vw;
   background-size: cover;
 }
 
@@ -115,20 +108,17 @@ nav {
 }
 
 .cube-1 .left {
-  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
-    no-repeat 50% 0;
+  background: url("img/honey.png") no-repeat 50% 0;
   background-size: cover;
 }
 
 .cube-2 .left {
-  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
-    no-repeat 50% -7vw;
+  background: url("img/honey.png") no-repeat 50% -7vw;
   background-size: cover;
 }
 
 .cube-3 .left {
-  background: url("https://cdn.pixabay.com/photo/2024/04/06/23/33/ai-generated-8680176_640.png")
-    no-repeat 50% -14vw;
+  background: url("img/honey.png") no-repeat 50% -14vw;
   background-size: cover;
 }
 
@@ -137,20 +127,17 @@ nav {
 }
 
 .cube-1 .right {
-  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
-    no-repeat 50% 0;
+  background: url("img/spring.jpg") no-repeat 50% 0;
   background-size: cover;
 }
 
 .cube-2 .right {
-  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
-    no-repeat 50% -7vw;
+  background: url("img/spring.jpg") no-repeat 50% -7vw;
   background-size: cover;
 }
 
 .cube-3 .right {
-  background: url("https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_640.jpg")
-    no-repeat 50% -14vw;
+  background: url("img/spring.jpg") no-repeat 50% -14vw;
   background-size: cover;
 }
 
@@ -169,9 +156,9 @@ nav {
 .control {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgb(238, 238, 154);
+  width: 45px;
+  height: 45px;
+  border: 2px solid rgb(238, 238, 154);
   background-color: rgba(59, 52, 50, 0.7);
   display: flex;
   justify-content: center;
@@ -200,7 +187,9 @@ nav {
   top: 50%;
   left: 135%;
 }
-
+.fas {
+  font-size: 2rem;
+}
 .play-pause {
   top: 140%;
   left: 120%;
